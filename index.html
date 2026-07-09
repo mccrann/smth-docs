@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMTH Help Center</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="content-width">
+      <a class="brand" href="/">SMTH Help Hub</a>
+      <nav>
+        <a href="/?file=getting-started.md">Getting Started</a>
+        <a href="/?file=usage.md">Usage</a>
+        <a href="/?file=faq.md">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-width">
+    <div class="doc-layout">
+      <aside class="doc-sidebar">
+        <h2>Docs</h2>
+        <ul id="doc-nav"></ul>
+      </aside>
+      <article class="doc-page markdown-page">
+        <div id="markdown-content" class="markdown-content">
+          <p>Loading documentation…</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="content-width">
+      <p>Help Hub for SMTH. Smooth operations and seamless support.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/md-viewer.js"></script>
+</body>
+</html>
