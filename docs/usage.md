@@ -20,7 +20,7 @@ Example payment statuses:
 
 Refunds can be created from either the Dashboard or the API.
 
-Refund requests are processed immediately, although banks may take several business days to return funds to the customer.
+Refund requests are processed in 5–7 business days.
 
 ## Payouts
 
@@ -29,6 +29,7 @@ Payouts transfer available funds to your nominated bank account.
 Current payout statuses:
 
 - Pending
+- Deposited
 - Paid
 - Failed
 
