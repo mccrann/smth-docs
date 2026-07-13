@@ -20,7 +20,7 @@ Example payment statuses:
 
 Refunds can be created from either the Dashboard or the API.
 
-Refund requests are processed within 5–7 business days, although banks may take additional time to return funds to the customer.
+Refund requests are processed within 1–5 business days, although banks may take additional time to return funds to the customer.
 
 ## Payouts
 
