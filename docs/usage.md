@@ -32,6 +32,8 @@ Current payout statuses:
 - Deposited
 - Paid
 - Failed
+- Unknown
+- Error
 
 Payouts are processed once each business day.
 
