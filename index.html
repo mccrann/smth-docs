@@ -4,13 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SMTH Help Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="content-width">
-      <a class="brand" href="/">SMTH Help Hub</a>
-      <nav>
+    <div class="header-inner content-width">
+      <a class="brand" href="/">
+        <span class="brand-mark">SMTH</span>
+        Help Hub
+      </a>
+      <nav class="site-nav">
         <a href="/?file=getting-started.md">Getting Started</a>
         <a href="/?file=usage.md">Usage</a>
         <a href="/?file=faq.md">FAQ</a>
@@ -18,10 +24,16 @@
     </div>
   </header>
 
+  <div class="page-hero">
+    <div class="content-width">
+      <p id="page-title" class="page-title">Loading...</p>
+    </div>
+  </div>
+
   <main class="content-width">
     <div class="doc-layout">
       <aside class="doc-sidebar">
-        <h2>Docs</h2>
+        <p class="sidebar-label">Documentation</p>
         <ul id="doc-nav"></ul>
       </aside>
       <article class="doc-page markdown-page">
@@ -33,8 +45,17 @@
   </main>
 
   <footer class="site-footer">
-    <div class="content-width">
-      <p>Help Hub for SMTH. Smooth operations and seamless support.</p>
+    <div class="footer-inner content-width">
+      <span class="footer-brand">
+        <span class="brand-mark brand-mark--sm">SMTH</span>
+        Help Hub
+      </span>
+      <p class="footer-tagline">Smooth operations and seamless support.</p>
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/?file=getting-started.md">Getting Started</a>
+        <a href="/?file=faq.md">FAQ</a>
+      </nav>
     </div>
   </footer>
 
