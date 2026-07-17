@@ -85,3 +85,11 @@ Selecting **Reset demo data** restores the original demonstration data and remov
 The SMTH Payments demo stores customer data locally in your browser.
 
 Selecting **Reset demo data** restores the original demonstration data and removes any customers you have added during the current demo.
+
+---
+
+## Was this article helpful?
+
+👍 Yes  👎 No
+
+If this documentation is incorrect or missing information, please let us know.

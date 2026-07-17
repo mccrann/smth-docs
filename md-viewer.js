@@ -23,10 +23,33 @@ function createNavLink(file, title, isActive) {
 
 function buildSidebar(items) {
   navEl.innerHTML = '';
+
   const fragment = document.createDocumentFragment();
 
-  items.forEach(item => {
-    fragment.appendChild(createNavLink(item.file, item.title, item.file === mdFile));
+  const homeItem = items.find(item => item.file === 'index.md');
+
+  const otherItems = items
+    .filter(item => item.file !== 'index.md')
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  if (homeItem) {
+    fragment.appendChild(
+      createNavLink(
+        homeItem.file,
+        'Home',
+        homeItem.file === mdFile
+      )
+    );
+  }
+
+  otherItems.forEach(item => {
+    fragment.appendChild(
+      createNavLink(
+        item.file,
+        item.title,
+        item.file === mdFile
+      )
+    );
   });
 
   navEl.appendChild(fragment);
@@ -44,11 +67,9 @@ fetch('/api/docs')
   })
   .catch(() => {
     buildSidebar([
-      { file: 'index.md', title: 'smth-docs Help Center' },
-      { file: 'getting-started.md', title: 'Getting Started' },
-      { file: 'usage.md', title: 'Usage' },
-      { file: 'faq.md', title: 'FAQ' },
-      { file: 'sample-doc.md', title: 'Sample Markdown Page' }
+      { file: 'index.md', title: 'SMTH Help Center' },
+      { file: 'customers.md', title: 'Customers' },
+      { file: 'dashboard.md', title: 'Dashboard' }
     ]);
   });
 
