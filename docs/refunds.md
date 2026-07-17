@@ -74,6 +74,10 @@ Although the Refunds page does not yet contain a list, refund totals appear in t
 
 The Payments page also shows individual refunded records with the status **Refunded**.
 
+## Refund processing time
+
+Refunds are expected to take about 33 to 35 days to process.
+
 ## Reset refunds
 
 To remove refunds you created and restore the original statuses:
