@@ -1,95 +1,165 @@
-# Customers
+# Manage customers
 
-The **Customers** page lets you manage the people who make purchases through SMTH Payments. You can add new customers, view existing customer details and archive customers that are no longer active.
+The **Customers** page lets you view the demo customer list, add a customer, and archive an active customer.
 
----
+> **Demo environment**
+>
+> Customer records are synthetic and stored only in your browser. Do not enter real personal or payment information.
 
-## View customers
+## Open the Customers page
 
-Open **Customers** from the navigation menu to see a list of all customers in your account.
+1. Open the SMTH Payments dashboard.
+2. Select **Customers** in the sidebar.
 
-For each customer you can view:
+The page displays the customer records currently stored in your browser.
 
-- Name
-- Email address
-- Current status
-- Date the customer was created
+## Understand the customer table
 
-Customers are displayed with the most recently created records first.
+| Column | Description |
+|---|---|
+| **Customer** | The customer's name and email address. |
+| **Status** | Shows whether the customer is **Active** or **Archived**. |
+| **Created** | The date the customer record was created. |
+| **Action** | Displays **Archive** for active customers. Archived customers have no available action. |
 
----
+Archived customers remain visible so that their record can still be understood alongside historical demo activity.
 
 ## Add a customer
 
-To create a new customer:
+1. Select **Add customer**.
+2. Enter the customer's **Name**.
+3. Enter the customer's **Email** address.
+4. Select **Save customer**.
 
-1. Open **Customers**.
-2. Select **Add customer**.
-3. Enter the customer's name.
-4. Enter the customer's email address.
-5. Select **Save customer**.
+The new customer is added to the locally stored customer list.
 
-The new customer will immediately appear in the customer list and can be selected when creating future payments.
+Both fields are required. The email field also uses the browser's email-format validation.
 
----
+### Cancel without saving
+
+Select **Cancel** to close the form and discard the unsaved entries.
+
+No customer is created until you select **Save customer**.
 
 ## Archive a customer
 
-If a customer is no longer active, you can archive their record.
+Archiving marks a customer as inactive without deleting the record.
 
-To archive a customer:
+1. Find an active customer in the table.
+2. Select **Archive**.
+3. Wait for the row to update.
 
-1. Open **Customers**.
-2. Locate the customer you want to archive.
-3. Select **Archive**.
+After archiving:
 
-Archived customers remain in your records but are marked as inactive.
+- The customer's status changes to **Archived**.
+- The **Archive** action disappears.
+- The customer remains visible in the list.
+- Existing historical payment rows that reference the customer are not deleted.
 
-Archiving a customer does not remove any existing payments or reporting data associated with that customer.
+The current demo does not provide a confirmation prompt before archiving.
 
----
+## Restore or edit a customer
 
-## Customer statuses
+The current demo does not include controls to:
 
-Customers can have one of the following statuses.
+- Restore an archived customer
+- Edit a customer's name
+- Change a customer's email address
+- Permanently delete a customer
 
-| Status | Description |
-| ------- | ----------- |
-| **Active** | The customer is available for new payments. |
-| **Archived** | The customer is retained for historical records but is no longer active. |
+To undo all local customer changes, use **Reset demo data**. This restores the complete original dataset rather than changing only one customer.
 
----
+## Reset customer data
 
-## Frequently asked questions
+1. Select **Reset demo data**.
+2. Confirm the reset if prompted.
+3. Wait for the original customer list to reload.
 
-### Can I delete a customer?
+Resetting:
 
-No. Customers can be archived but are not permanently deleted. This helps preserve historical payment records.
+- Removes customers you added
+- Restores customers you archived
+- Restores the original payment, refund, and payout demo data
 
-### Does archiving a customer delete their payments?
+> Resetting is not reversible and affects the entire demo, not only the Customers page.
 
-No. Existing payments remain unchanged and continue to appear in reports and payment history.
+## How customer data is stored
 
-### Can I restore an archived customer?
+Customer changes are saved in browser local storage.
 
-Not currently. Once archived, the customer remains inactive.
+This means:
 
----
+- Added and archived customers normally remain after refreshing.
+- Data is available only in the same browser profile.
+- Other devices and browsers have independent copies.
+- Private browsing may discard data when the session closes.
+- Clearing browser site data can remove local customer changes.
+- There is no cloud backup, account sync, or shared team access.
 
-## Demo environment
+## Relationship between customers and payments
 
-The SMTH Payments demo stores customer data locally in your browser.
+The Customers page manages customer records only.
 
-Selecting **Reset demo data** restores the original demonstration data and removes any customers you have added during the current demo.
+The current demo does not provide a workflow to:
 
-The SMTH Payments demo stores customer data locally in your browser.
+- Create a payment for a customer
+- Open a customer's payment history
+- Link or unlink an existing payment
+- Merge duplicate customers
+- Filter payments by customer
 
-Selecting **Reset demo data** restores the original demonstration data and removes any customers you have added during the current demo.
+Payment rows retain their own customer information, so archiving a customer does not erase historical payment activity.
 
----
+## Troubleshooting
 
-## Was this article helpful?
+### Save customer does not work
 
-👍 Yes  👎 No
+Check that:
 
-If this documentation is incorrect or missing information, please let us know.
+1. The **Name** field is not empty.
+2. The **Email** field is not empty.
+3. The email has a valid format, such as `name@example.com`.
+4. JavaScript and browser storage are enabled.
+
+### I added the wrong customer
+
+The current demo has no edit or individual delete action. Use **Reset demo data** to restore the original dataset.
+
+Note that reset also removes every other local change.
+
+### I archived a customer accidentally
+
+Archived customers cannot be restored individually. Use **Reset demo data** to return to the original sample records.
+
+### My new customer disappeared
+
+Confirm that you are using the same browser profile and device. Local data may also be removed by:
+
+- Clearing site data
+- Using private or incognito mode
+- Browser privacy settings
+- Storage-cleaning extensions
+
+### The customer exists on one device but not another
+
+The demo does not synchronise customer data. Each browser profile stores its own copy.
+
+### Customers could not be loaded
+
+Refresh the page. If the issue continues, clear the site's stored data and reopen the demo. This restores the original dataset but removes your changes.
+
+## Current limitations
+
+The Customers page does not currently support:
+
+- Search or filters
+- Manual sorting
+- Customer editing
+- Individual deletion
+- Restoring archived customers
+- Customer detail pages
+- Payment history by customer
+- Import or export
+- Duplicate detection
+- Notes, phone numbers, or addresses
+- Shared or server-side customer storage
