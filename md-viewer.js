@@ -69,10 +69,10 @@ fetch('/api/docs')
     buildSidebar([
       { file: 'index.md', title: 'SMTH Help Center' },
       { file: 'customers.md', title: 'Customers' },
-      { file: 'dashboard.md', title: 'Dashboard' }
-      { file: 'faq.md', title: 'FAQ' }
-      { file: 'payments.md', title: 'Payments' }
-      { file: 'payouts.md', title: 'Payouts' }
+      { file: 'dashboard.md', title: 'Dashboard' },
+      { file: 'faq.md', title: 'FAQ' },
+      { file: 'payments.md', title: 'Payments' },
+      { file: 'payouts.md', title: 'Payouts' },
       { file: 'refunds.md', title: 'Refunds' }
     ]);
   });
