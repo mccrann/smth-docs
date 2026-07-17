@@ -76,7 +76,7 @@ The Payments page also shows individual refunded records with the status **Refun
 
 ## Refund processing time
 
-Refunds are expected to take about 33 to 35 days to process.
+Refunds are expected to take about 34 to 36 days to process.
 
 ## Reset refunds
 
