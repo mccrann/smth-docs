@@ -477,6 +477,44 @@ main.content-width {
   border-radius: 2px;
 }
 
+
+    0% {
+        left: -120%;
+    }
+
+    30% {
+        left: 140%;
+    }
+
+    100% {
+        left: 140%;
+    }
+
+}
+
+.demo-pill {
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    padding:4px 10px;
+
+    border-radius:999px;
+
+    background:#ffe8ec;
+
+    color:#d7263d;
+
+    font-size:.7rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
 /* ── Responsive ──────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .doc-layout {
