@@ -481,7 +481,7 @@ main.content-width {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
+color: #fff;
     padding: 14px 28px;
 
     border-radius: 999px;
@@ -569,28 +569,6 @@ transform:
 
 }
 
-.demo-pill {
-
-    display:inline-block;
-
-    margin-bottom:12px;
-
-    padding:4px 10px;
-
-    border-radius:999px;
-
-    background:#ffe8ec;
-
-    color:#d7263d;
-
-    font-size:.7rem;
-
-    font-weight:700;
-
-    letter-spacing:.08em;
-
-    text-transform:uppercase;
-}
 
 /* ── Responsive ──────────────────────────────────────────────── */
 @media (max-width: 900px) {
