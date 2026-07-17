@@ -1,6 +1,6 @@
 # Manage customers
 
-The **Customers** page lets you view the demo customer list, add a customer, and archive an active customer.
+The **Customers** page lets you view the demo customer list, add a customer, archive an active customer, and unarchive an archived customer.
 
 > **Demo environment**
 >
@@ -20,7 +20,7 @@ The page displays the customer records currently stored in your browser.
 | **Customer** | The customer's name and email address. |
 | **Status** | Shows whether the customer is **Active** or **Archived**. |
 | **Created** | The date the customer record was created. |
-| **Action** | Displays **Archive** for active customers. Archived customers have no available action. |
+| **Action** | Displays **Archive** for active customers and **Unarchive** for archived customers. |
 
 Archived customers remain visible so that their record can still be understood alongside historical demo activity.
 
@@ -53,16 +53,31 @@ After archiving:
 
 - The customer's status changes to **Archived**.
 - The **Archive** action disappears.
+- The **Unarchive** action appears.
 - The customer remains visible in the list.
 - Existing historical payment rows that reference the customer are not deleted.
 
 The current demo does not provide a confirmation prompt before archiving.
 
+## Unarchive a customer
+
+Unarchiving restores an archived customer to an active status.
+
+1. Find an archived customer in the table.
+2. Select **Unarchive**.
+3. Wait for the row to update.
+
+After unarchiving:
+
+- The customer's status changes to **Active**.
+- The **Unarchive** action disappears.
+- The **Archive** action appears.
+- The customer remains visible in the list.
+
 ## Restore or edit a customer
 
 The current demo does not include controls to:
 
-- Restore an archived customer
 - Edit a customer's name
 - Change a customer's email address
 - Permanently delete a customer
@@ -129,7 +144,7 @@ Note that reset also removes every other local change.
 
 ### I archived a customer accidentally
 
-Archived customers cannot be restored individually. Use **Reset demo data** to return to the original sample records.
+Use **Unarchive** to restore the customer to an active status.
 
 ### My new customer disappeared
 
@@ -156,7 +171,6 @@ The Customers page does not currently support:
 - Manual sorting
 - Customer editing
 - Individual deletion
-- Restoring archived customers
 - Customer detail pages
 - Payment history by customer
 - Import or export
