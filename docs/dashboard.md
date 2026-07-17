@@ -49,6 +49,8 @@ The dedicated **Payouts** page is currently marked **Coming soon**, so there is 
 
 The **Recent payments** table shows a snapshot of payment activity.
 
+The table displays the latest 5 payments.
+
 | Column | Description |
 |---|---|
 | **Customer** | The customer's name and email address. |
@@ -60,8 +62,6 @@ The **Recent payments** table shows a snapshot of payment activity.
 For the complete payment list and refund actions, open **Payments** from the sidebar.
 
 ## Payment statuses
-
-The demo uses the following payment statuses.
 
 ### Paid
 
