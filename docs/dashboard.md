@@ -49,7 +49,7 @@ The dedicated **Payouts** page is currently marked **Coming soon**, so there is 
 
 The **Recent payments** table shows a snapshot of payment activity.
 
-It displays the 6 most recent payments.
+It displays the 12 most recent payments.
 
 | Column | Description |
 |---|---|
