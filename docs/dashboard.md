@@ -49,6 +49,8 @@ The dedicated **Payouts** page is currently marked **Coming soon**, so there is 
 
 The **Recent payments** table shows a snapshot of payment activity.
 
+It displays the 6 most recent payments.
+
 | Column | Description |
 |---|---|
 | **Customer** | The customer's name and email address. |
